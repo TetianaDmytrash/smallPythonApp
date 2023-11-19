@@ -14,7 +14,13 @@ secondNumber = correctInput()
 thirdNumber = correctInput()
 
 # first variant
-if firstNumber > secondNumber and firstNumber > thirdNumber:
+if firstNumber == secondNumber == thirdNumber:
+	greatestNumber = firstNumber
+elif (firstNumber == secondNumber) or (firstNumber == thirdNumber):
+	greatestNumber = firstNumber
+elif secondNumber == thirdNumber:
+	greatestNumber = secondNumber
+elif firstNumber > secondNumber and firstNumber > thirdNumber:
 	greatestNumber = firstNumber
 elif secondNumber > firstNumber and secondNumber > thirdNumber:
 	greatestNumber = secondNumber
